@@ -1,0 +1,8 @@
+forge:
+  baseurl: '<%= @r10k_puppetforge -%>'
+
+sources:
+  puppet:
+    remote: '<%= @r10k_controlrepo -%>'
+    basedir: '<%= @codedir -%>/environments'
+    prefix: false
