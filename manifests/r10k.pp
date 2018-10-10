@@ -1,5 +1,10 @@
+package { 'cri':
+  ensure   => '2.8',
+  provider => 'puppet_gem',
+  source   => $::rubygems_source,
+}
 package { 'r10k':
-  ensure   => latest,
+  ensure   => '3.0.0',
   provider => 'puppet_gem',
   source   => $::rubygems_source,
 }
