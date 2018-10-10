@@ -5,7 +5,7 @@ $r10k_version = $ruby_version_cmp ? {
 }
 
 package { 'r10k':
-  ensure   => '3.0.0',
+  ensure   => $r10k_version,
   provider => 'puppet_gem',
   source   => $::rubygems_source,
 }
